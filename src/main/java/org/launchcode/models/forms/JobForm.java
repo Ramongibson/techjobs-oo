@@ -18,11 +18,13 @@ public class JobForm {
     @NotNull
     @Size(min=1, message = "Name may not be empty")
     private String name;
-
     @NotNull
     private int employerId;
+    @NotNull
     private int locationId;
-    private int coreCompetencieId;
+    @NotNull
+    private int coreCompetencyId;
+    @NotNull
     private int positionTypeId;
 
 
@@ -108,12 +110,12 @@ public class JobForm {
         this.locationId = locationId;
     }
 
-    public int getCoreCompetencieId() {
-        return coreCompetencieId;
+    public int getCoreCompetencyId() {
+        return coreCompetencyId;
     }
 
-    public void setCoreCompetencieId(int coreCompetencieId) {
-        this.coreCompetencieId = coreCompetencieId;
+    public void setCoreCompetencyId(int coreCompetencyId) {
+        this.coreCompetencyId = coreCompetencyId;
     }
 
     public int getPositionTypeId() {
